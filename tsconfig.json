@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",               // output JS moderno
+    "module": "nodenext",               // per usare import/export
+    "moduleResolution": "nodenext",   // risolve moduli come Node.js
+    "esModuleInterop": true,          // compatibilità con require()
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                   // abilitare tutti i controlli TypeScript
+    "skipLibCheck": true,             // salta il check dei tipi delle librerie
+    "resolveJsonModule": true,        // import JSON se serve
+    "outDir": "dist",                  // cartella di output compilata (opzionale)
+    "typeRoots": ["src/types", "./node_modules/@types"],
+    "types": ["node", "express", "express-session"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+  },
+  "include": [
+    "src/**/*",
+    "routes/**/*",
+    "src/**/*",
+    "app.ts", 
+    "config.ts"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

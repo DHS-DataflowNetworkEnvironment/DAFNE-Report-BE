@@ -1,0 +1,6 @@
+node_modules
+logs
+config
+package-lock.json
+test_logs
+.devcontainer
