@@ -1,0 +1,17 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: #DDD;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00B7FF;
+}

@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  dafne-report-db:
+    container_name: dafne-report-db
+    hostname: dafne-report-db
+    restart: always
+    image: "library/postgres:17"
+    env_file:
+      - /data/dafne-report/config/db_credentials.env
+    networks:
+      - dafne-report
+    ports:
+      - "5435:5432"
+    volumes:
+      - /data/dafne-report/db/:/var/lib/postgresql/data
+
+networks:
+  dafne-report:
+    driver: bridge

@@ -1,0 +1,12 @@
+logs
+config
+package-lock.json
+test_logs
+Dockerfile
+node_modules
+.devcontainer
+.dockerignore
+.git
+.gitignore
+.vscode
+.env
